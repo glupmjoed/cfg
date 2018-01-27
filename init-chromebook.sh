@@ -1,4 +1,7 @@
 #!/bin/bash
 
+# Set keyboard layout
+setxkbmap dk
+
 # Map Super/Search key as Ctrl on Chromebook
-setxkbmap dk -option altwin:ctrl_win
+setxkbmap -option altwin:ctrl_win
