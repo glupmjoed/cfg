@@ -1,3 +1,5 @@
+#!/bin/bash
+
 export EDITOR="emacs -nw"
 export PATH=$PATH:$HOME/bin
 
