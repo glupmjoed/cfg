@@ -1,0 +1,20 @@
+X.org graphics driver build notes for Samsung Chromebook 503C
+=============================================================
+
+Clone
+^^^^^
+
+[source,shell]
+$ git clone git://anongit.freedesktop.org/xorg/driver/xf86-video-armsoc
+
+Configure
+^^^^^^^^^
+
+[source,shell]
+$ ./autogen.sh --with-drmmode=exynos --prefix=/usr
+
+Build
+^^^^^
+
+[source,shell]
+$ make && sudo make install
