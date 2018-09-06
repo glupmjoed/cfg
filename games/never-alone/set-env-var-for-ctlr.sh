@@ -21,4 +21,4 @@ then echo "Launch script already patched!"
 fi
 
 # Add 'LC_ALL=C' after the '# Initialization' line
-sed -i 's/^# Init.*$/&\nLC_ALL=C/g' "$game"
+sed -i 's/^# Init.*$/&\nLC_ALL=C/' "$game"
