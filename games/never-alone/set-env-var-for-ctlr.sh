@@ -9,15 +9,17 @@
 # 'LC_ALL=C %command%' under 'Properties -> Set Launch Options'.
 
 if [ -z "$1" ]
-then echo "Please provide install path for Never Alone (1st argument)"
-     exit 1
+then
+    echo "Please provide install path for Never Alone (1st argument)"
+    exit 1
 fi
 
 game="${1%/}"/start.sh
 
 if grep -q "^LC_ALL=C$" "$game"
-then echo "Launch script already patched!"
-     exit 0
+then
+    echo "Launch script already patched!"
+    exit 0
 fi
 
 # Add 'LC_ALL=C' after the '# Initialization' line
