@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This script provides a workaround to some of the buggy and/or unpredictable
+# behaviour relating to savegames in XCOM 2. See the README file for usage
+# details.
+
 SVDIR="$HOME/.local/share/feral-interactive/XCOM 2 WotC/VFS/Local/my games/"\
 "XCOM2 War of the Chosen/XComGame/SaveData"
 
