@@ -14,7 +14,7 @@ while getopts "c:dls:t" opt; do
         c ) cflag=1; SLEEP=$OPTARG ;;
         d ) dflag=1 ;;
         l ) lflag=1 ;;
-        s ) SVDIR="${OPTARG%/}"; echo $SVDIR ;;
+        s ) SVDIR="${OPTARG%/}" ;;
         t ) tflag=1 ;;
         \? ) echo $usage 1>&2
              exit 1 ;;
