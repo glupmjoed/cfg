@@ -50,7 +50,7 @@ then
     if [ $tflag ]
     then
         (echo "Save files sorted by timestamp (press 'q' to quit):";
-         ls -lt --time-style=+"[%Y-%m-%d %T]" "$SVDIR" |
+         ls -lt --time-style=+"[%F %T]" "$SVDIR" |
              sed -E '1d; s/^.*(\[.*)$/\1/g; s/save_//g') | less
         exit 0
     fi
