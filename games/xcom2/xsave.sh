@@ -24,7 +24,7 @@ shift $((OPTIND - 1))
 
 if [ -z "$1" ]
 then
-    echo $usage
+    echo $usage 1>&2
     exit 1
 fi
 
